@@ -6,10 +6,9 @@
   font-family: $font-main;
   color: $color-text;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: $color-white;
   overflow: hidden;
   
-  /* NUEVO: Preparamos la tarjeta para que se anime suavemente */
   transition: transform 300ms ease;
 
   &__image {
@@ -47,7 +46,6 @@
     color: $color-text;
     letter-spacing: 0;
     
-    /* NUEVO: Transición suave también para el color del texto */
     transition: color 300ms ease;
   }
 
@@ -69,14 +67,11 @@
     margin-bottom: 16px;
   }
 
-    /* Preguntar porque movimos hasta abajo este estado de hover */
     &:hover {
-      transform: scale(1.2); /* Crece un 20% */
+      transform: scale(1.2); 
   
-      /* Al hacer hover en la card, cambiamos el color del título interno */
-      .card__title {
-        color: #34568b;
-      }
+    .card__title {
+      color: #34568b;
     }
-  
+  }
 }

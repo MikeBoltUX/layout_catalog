@@ -1,31 +1,23 @@
 .catalog {
-    /* Paddings fijos requeridos: 50px vertical, 40px horizontal */
     padding: 50px 40px;
     
-    /* Activamos CSS Grid */
     display: grid;
     
-    /* Por defecto (pantallas pequeñas): 1 columna del ancho de la card (200px) */
-    grid-template-columns: 200px;
-    
-    /* Gaps requeridos: 48px horizontal y 46px vertical */
+    grid-template-columns: $card-width;
+
     gap: 46px 48px;
     
-    /* Centramos el grid en la pantalla para que se vea bien */
     justify-content: center;
   
-    /* 2 columnas a partir de 488px */
     @media (min-width: 488px) {
-      grid-template-columns: repeat(2, 200px);
+      grid-template-columns: repeat(2, $card-width);
     }
   
-    /* 3 columnas a partir de 768px */
     @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 200px);
+      grid-template-columns: repeat(3, $card-width);
     }
   
-    /* 4 columnas a partir de 1024px */
     @media (min-width: 1024px) {
-      grid-template-columns: repeat(4, 200px);
+      grid-template-columns: repeat(4, $card-width);
     }
   }

@@ -1,19 +1,17 @@
-@import "./variables";
-
 .price {
   display: flex;
-  align-items: baseline; // Alinea los textos por su base para que se vean nivelados
+  align-items: baseline; 
   justify-content: space-between;
 
-  &__label { // O &__label
+  &__label { 
     font-family: $font-main;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
-    color: $color-text-secondary; // Ese #707070 que suele ser el gris de la guía
+    color: $color-text-secondary; 
   }
 
-  &__value { // O &__value
+  &__value {
     font-family: $font-main;
     font-size: 18px;
     font-weight: 700;
